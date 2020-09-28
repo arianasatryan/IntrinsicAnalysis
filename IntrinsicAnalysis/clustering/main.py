@@ -17,7 +17,7 @@ def find_style_change_starts_by_ac(feature_vectors, hyperparams):
     # author style can't be determined and all fragments are suspicious
     # in that case (Fragment,True)for all Fragment in page
     for index in range(len(feature_vectors)):
-        if clusters[index] not in big_clusters_labels and len(big_clusters_labels) == 1:
+        if clusters[index] not in big_clusters_labels or len(big_clusters_labels) != 1:
             results.append(index)
     return results
 

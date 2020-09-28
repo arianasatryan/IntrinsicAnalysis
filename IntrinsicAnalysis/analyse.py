@@ -2,10 +2,12 @@ from IntrinsicAnalysis.clustering.AC_model import ACModel
 
 
 def analyse_paragraphs(paragraphs):
+    answer_pairs=[]
     ac = ACModel(None, None)
     results = ac.analyse_paragraphs(paragraphs)
     indicis = results['suspicious_parts']
-    suspicious_paragraphs = [paragraphs[index]for index in indicis]if indicis else []
-    return suspicious_paragraphs
+    for index in range(len(paragraphs)):
+        answer_pairs.append((paragraphs[index], index in indicis))
+    return answer_pairs
 
 

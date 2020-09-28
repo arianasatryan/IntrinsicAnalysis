@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="IntrinsicAnalysis",
-    version="0.0.1",
+    version="0.0.2",
     author="Ariana Asatryan, Tsolak Ghukasyan, Yeva Yeshilbashian",
     description="Intrinsic analysis package",
     long_description=long_description,
