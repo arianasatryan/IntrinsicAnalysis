@@ -19,7 +19,7 @@ As input _analyse_paragraphs_ takes list of strings(paragraphs) of entire docume
 ```python
 analyse_paragraphs(paragraphs)
 ```
-Return is a list of tuples. Each of them has corresponding paragraph as the first element and boolean (whether that paragraph is considered suspicious) as the second element.
+Returns a list of tuples. Each of them has corresponding paragraph as the first element and boolean (whether that paragraph is considered suspicious) as the second element.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
