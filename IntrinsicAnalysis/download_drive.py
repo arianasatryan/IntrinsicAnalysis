@@ -2,7 +2,7 @@ from google_drive_downloader import GoogleDriveDownloader as gdd
 
 
 files_ids = [
-    ('armenian-armtdp-ud-2.5-191206.udpipe','1IQCpQuT9S-7pwYvKQDRmAR9Xt94Cd9A8'),
+    ('armenian-armtdp-ud-2.5-191206.udpipe', '1IQCpQuT9S-7pwYvKQDRmAR9Xt94Cd9A8'),
 
     ('resources.json', '1oM5g2dMAc3R78hqBl58BTVgm9FNRRspe'),
     ('hy/depparse/armtdp.pt', '1BD6QEQ3NdyTLdr4iJZX2RHjCrKiQ26by'),
@@ -15,5 +15,5 @@ files_ids = [
 
 for name, id in files_ids:
     gdd.download_file_from_google_drive(file_id=id,
-                                        dest_path='/tmp/essential_models/' + name,
+                                        dest_path='/tmp/intrinsic_analysis/essential_models/' + name,
                                         showsize=True)

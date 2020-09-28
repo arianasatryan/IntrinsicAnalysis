@@ -6,8 +6,8 @@ import spacy_udpipe
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 EXTERNAL_DIR = ROOT_DIR+'/external_data'
-STANZA_MODEL_HY = '/tmp/essential_models'
-UDPIPE_MODEL_HY = '/tmp/essential_models/armenian-armtdp-ud-2.5-191206.udpipe'
+STANZA_MODEL_HY = '/tmp/intrinsic_analysis/essential_models/'
+UDPIPE_MODEL_HY = '/tmp/intrinsic_analysis/essential_models/armenian-armtdp-ud-2.5-191206.udpipe'
 
 nlp_udpipe = spacy_udpipe.load_from_path(lang='hy', path=UDPIPE_MODEL_HY,
                                          meta={"description": "Custom hy model"})
